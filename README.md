@@ -76,7 +76,10 @@ Head files of ```cu``` and ```cpp``` are saved here.
 
 ## source
 Files of ```cu``` and ```cpp``` are saved here.
+
 The ```Inference.cpp``` contains the main test function. The ```initModel()``` and ```inference()``` functions are finished in this file which are required in the assignment. The default GPU is '0', which is defined in ```InitializeCUDA(0);``` in ```initModel()```.
+
+More details are in ```source/README.md```.
 
 ## utils
 The file to change ```.onnx``` file into ```.npy``` weights is saved here.
