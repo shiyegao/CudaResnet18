@@ -3,8 +3,8 @@ Cuda NN inference. Example: ResNet18 in source/resnet18_main.cpp.
 
 
 ## Functionality implemented:
-* Convolution - with/without bias, arbitrary padding, arbitrary stride. Uses thrust
-* Linear - with/without bias. Uses thrust.
+* Convolution - with/without bias, arbitrary padding, arbitrary stride.
+* Linear - with/without bias.
 * BatchNorm.
 * ReLU.
 * MaxPool - arbitrary padding, arbitrary stride.
