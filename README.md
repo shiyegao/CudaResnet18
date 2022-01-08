@@ -48,7 +48,7 @@ After building, we can run the resnet_cuda codes if we are under 'CudaResnet18/b
 ```
 
 # File structure
-There are 4 folders which contains the our main codes. We will introduce the function of each part.
+There are 4 folders which contain our main codes. We will introduce the function of each part.
 ```
 CudaResnet18
     |----include
@@ -84,8 +84,8 @@ The file to change ```.onnx``` file into ```.npy``` weights is saved here.
 Weights files are saved here for model weights loading.
 
 ## other files
-1. CMakeLists.txt is for building the project before running Resnet18.
-2. README.md is for code reading. 
-3. resnet18.onnx is the file saving the Resnet18 model and its weights.
-4. resnet18Input.txt is the input file for test.
-5. resnet18Output.txt is the standard output file for comparison with our output.
+1. ```CMakeLists.txt``` is for building the project before running Resnet18.
+2. ```README.md``` is for code reading. 
+3. ```resnet18.onnx``` is the file saving the Resnet18 model and its weights.
+4. ```resnet18Input.txt``` is the input file for test.
+5. ```resnet18Output.txt``` is the standard output file for comparison with our output.
