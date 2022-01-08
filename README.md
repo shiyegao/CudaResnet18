@@ -24,16 +24,16 @@ git clone https://github.com/shiyegao/CudaResnet18.git
 cd CudaResnet18
 ```
 
-## Prepare weights
-This step is already finished in the folder 'weights'. We use 'CudaResnet18/utils/check_npy.py' to change a onnx file into npy files as for model weights.
+## Prepare weights(Unnecessary)
+This step is already finished in the folder ```weights```. We use ```utils/check_npy.py``` to change a onnx file into npy files as for model weights.
 
-If you want to use another onnx file as inputs, you should change the corresponding ```dic``` and ```root``` in 'utils/check_npy.py' and run
+If you want to use another onnx file as inputs, you should change the corresponding 'dic' and 'root' in ```utils/check_npy.py``` and run
 ```
 python ./utils/check_npy.py  # YOU DO NOT NEED TO RUN THIS CODE!
 ```
 
 ## Build
-After installation and preparation, we need to build the codes. If you are already under folder 'CudaResnet18', just run
+After installation and preparation, we need to build the codes. If you are already under the repository folder, just run
 ```
 mkdir build
 cd build
@@ -42,7 +42,7 @@ make -j
 ```
 
 ## Run
-After building, we can run the resnet_cuda codes if we are under 'CudaResnet18/build'.
+After building, we can run the resnet_cuda codes if we are under ```build```.
 ```
 ./Release/cuda_proj --weights_dir ../weights/
 ```
@@ -77,7 +77,7 @@ Head files of ```cu``` and ```cpp``` are saved here.
 ## source
 Files of ```cu``` and ```cpp``` are saved here.
 
-The ```Inference.cpp``` contains the main test function. The ```initModel()``` and ```inference()``` functions are finished in this file which are required in the assignment. The default GPU is '0', which is defined in ```InitializeCUDA(0);``` in ```initModel()```.
+The ```Inference.cpp``` contains the main test function. The 'initModel()' and 'inference()' functions are finished in this file which are required in the assignment. The default GPU is '0', which is defined in statement 'InitializeCUDA(0);' in function 'initModel()'.
 
 More details are in ```source/README.md```.
 
